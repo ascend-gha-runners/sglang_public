@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-PIP_INSTALL="python3 -m pip install --no-cache-dir"
+PIP_INSTALL="UV_PYTHON=python3 uv pip install --system --index-strategy unsafe-best-match"
 DEVICE_TYPE=$1
 
 
