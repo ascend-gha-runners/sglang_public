@@ -35,7 +35,7 @@ ${PIP_INSTALL} memfabric-hybrid==1.0.5
 PYTORCH_VERSION="2.8.0"
 TORCHVISION_VERSION="0.23.0"
 ${PIP_INSTALL} torch==${PYTORCH_VERSION} torchvision==${TORCHVISION_VERSION} --index-url https://download.pytorch.org/whl/cpu
-PTA_URL="https://gitcode.com/Ascend/pytorch/releases/download/v7.3.0-pytorch2.8.0/torch_npu-2.8.0.post2-cp311-cp311-manylinux_2_28_aarch64.whl"
+PTA_URL="--extra-index-url https://mirrors.huaweicloud.com/ascend/repos/pypi torch-npu==2.8.0.post2"
 ${PIP_INSTALL} ${PTA_URL}
 
 
